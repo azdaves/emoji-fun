@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="main.css">
+    <title>Emoji Fun</title>
+</head>
+<style>
+    body {
+      margin: 30px;
+    }
+    h1, h4, p {
+      font-family: sans-serif;
+    }
+    h1::before {
+      content: "\1F37A";
+      content: "🍟";
+
+      
+    }
+  </style>
+</head>
+<body>
+  <h1>Emoji Example🌭</h1>
+
+  <div class="content">
+    <p>Emojis are pretty awesome!</p>
+    <p>Above we have an example in CSS</p>
+    <p>Here is an example in JS:</p>
+    <h4 id="emoji">:P</h4>
+    <p>Here is another example in JS:</p>
+    <h4 id="emoji2">:P</h4>
+    <p>Here is an example in HTML:</p>
+    <h4 id="emoji">&#x1F37F</h4>
+  </div>
+
+  <script>
+    var emoji = document.querySelector("#emoji");
+    emoji.innerText = "Javascript here => 🌭";
+    var emoji2 = document.querySelector("#emoji2");
+    emoji.innerText = String.fromCodePoint(0x1F354)
+    
+
+  </script>
+</body>
+</html>
